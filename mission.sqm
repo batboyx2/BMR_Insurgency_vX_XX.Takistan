@@ -4858,7 +4858,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=379;
+		items=380;
 		class Item0
 		{
 			position[]={1428.552,220.87392,3590.0149};
@@ -8268,6 +8268,16 @@ class Mission
 			type="Empty";
 			a=50;
 			b=50;
+		};
+		class Item379
+		{
+			position[]={8242.6338,296.04001,2139.0249};
+			name="Respawn_West";
+			text="BASE";
+			type="flag_NATO";
+			colorName="ColorBlue";
+			a=0.5;
+			b=0.5;
 		};
 	};
 	class Sensors
