@@ -618,7 +618,7 @@ BTC_vehicle_mobile_respawn = {
 	switch (true) do {
 		case (_var == "MHQ_1") : {_VarName = "MHQ_1"; _veh setVehicleVarName _VarName; _veh Call Compile Format ["%1=_This ; PublicVariable ""%1""",_VarName]; _veh setVariable["persistent",true]; [[_veh,_var],"mhq_actions_fnc",WEST] spawn BIS_fnc_MP;};
 		case (_var == "MHQ_2") : {_VarName = "MHQ_2"; _veh setVehicleVarName _VarName; _veh Call Compile Format ["%1=_This ; PublicVariable ""%1""",_VarName]; _veh setVariable["persistent",true]; [[_veh,_var],"mhq_actions_fnc",WEST] spawn BIS_fnc_MP;};
-		case (_var == "MHQ_3") : {_VarName = "MHQ_3"; _veh setVehicleVarName _VarName; _veh Call Compile Format ["%1=_This ; PublicVariable ""%1""",_VarName]; _veh setVariable["persistent",true]; [[_veh,_var],"mhq_actions_fnc",WEST] spawn BIS_fnc_MP; [_veh] call paint_heli_fnc;};
+		case (_var == "MHQ_3") : {_VarName = "MHQ_3"; _veh setVehicleVarName _VarName; _veh Call Compile Format ["%1=_This ; PublicVariable ""%1""",_VarName]; _veh setVariable["persistent",true]; [[_veh,_var],"mhq_actions_fnc",WEST] spawn BIS_fnc_MP;};
 		case (_var == "Opfor_MHQ") : {_VarName = "Opfor_MHQ"; _veh setVehicleVarName _VarName; _veh Call Compile Format ["%1=_This ; PublicVariable ""%1""",_VarName]; [[_veh,_var],"mhq_actions_fnc",EAST] spawn BIS_fnc_MP;};		
 	};
 };

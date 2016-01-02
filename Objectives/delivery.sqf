@@ -55,7 +55,6 @@ if (isNil "MHQ_3" || !Alive MHQ_3) then {// Create Helicopter MHQ_3 if it doesn'
 
 		_heli = createVehicle ["I_Heli_Transport_02_F", _mhq_3_pos, [], 0, "NONE"];	sleep jig_tvt_globalsleep;
 		_heli addeventhandler ["killed","[(_this select 0)] spawn remove_carcass_fnc"]
-		[_heli] call paint_heli_fnc;
 		_heli setVehicleVarName _HeliName; MHQ_3 = _heli;
 		_heli Call Compile Format ["%1=_This ; PublicVariable ""%1""",_HeliName];
 		sleep 3;
