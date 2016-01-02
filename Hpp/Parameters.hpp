@@ -27,14 +27,14 @@ class Params
 	"Static Weather 100% Overcast (Weather Disabled)",
 	"Dynamic Real Weather Enabled",
 	"Dynamic Random Weather Enabled"};
-	default = 25;
+	default = 0;
 	};
 	class radio_chatter//3
 	{
 	title = "		Enable Ambient Vehicle Radio Chatter?";
 	values[]={0,1};
 	texts[]={"No","Yes"};
-	default = 1;
+	default = 0;
 	};
 	class combat_sounds//4
 	{
@@ -77,7 +77,7 @@ class Params
 	"=BTC= Quick revive :: AI can revive. Mobile HQ Enabled.",
 	"Revive System Disabled. Mobile HQ Disabled.",
 	"Revive System Disabled. Mobile HQ Enabled."};
-	default = 1;
+	default = 7;
 	};
 	class INS_revive_time//9
 	{
@@ -109,7 +109,7 @@ class Params
 	"Sud Russians - Requirements :: @evw;@rds",
 	"RHS Armed Forces of the Russian Federation - Requirements :: @rhs_afrf3",
 	"Syrian Arab Army and Islamic State - Requirements :: @iraqi_syrian_conflict;@cup_weapons;@mas_nato_rus_sf_veh;@rhs_afrf3;@rhs_usf3"};
-	default = 1;
+	default = 5;
 	};
 	class INS_Dum_Param4//12
 	{
@@ -123,21 +123,21 @@ class Params
 	title = "		Enemy Infantry Probability";
 	values[]={25,50,75,100};
 	texts[]={"25 % chance","50 % chance","75 % chance","100 % chance"};
-	default = 50;
+	default = 25;
 	};
 	class armor_chance//14
 	{
 	title = "		Enemy Armor Probability";
 	values[]={1,25,50,75,100};
 	texts[]={"0 % chance Heavy Armor + Rewards disabled","25 % chance","50 % chance","75 % chance","100 % chance"};
-	default = 75;
+	default = 25;
 	};
 	class AI_spawn_Dis//15
 	{
 	title = "		Enemy AI Spawn Trigger Distance";
 	values[]={200,250,300,350,400,450,500,550,600,650,700,750,800,850,900,950,1000,1050,1100,1150,1200,1250};
 	texts[]={"200","250","300","350","400","450","500","550","600","650","700","750","800","850","900","950","1000","1050","1100","1150","1200","1250"};
-	default = 350;
+	default = 800;
 	};
 	class Act_Zone_Limit//16
 	{
@@ -151,21 +151,21 @@ class Params
 	title = "		Delay Grid zone deactivation when no friendly players near";
 	values[]={0,0.5,1,2,3,4,5,6,8,10,12,14,16,18,20,30};
 	texts[]={"Disabled","30 seconds","1 minute","2 minutes","3 minutes","4 minutes","5 minutes","6 minutes","8 minutes","10 minutes","12 minutes","14 minutes","16 minutes","18 minutes","20 minutes","30 minutes"};
-	default = 2;
+	default = 10;
 	};
 	class Enemy_Air//18
 	{
 	title = "		Enable JIG Enemy Air Patrols?";
 	values[]={0,1,2,3};
 	texts[]={"No","Helis Only","Fixed Wing Only","Helis and Fixed Wing"};
-	default = 3;
+	default = 1;
 	};
 	class AiAirRespawn//19
 	{
 	title = "		Minimum Enemy Air Patrol Respawn Delay";
 	values[]={45,300,600,1200,1800,2400,3000,3600};
 	texts[]={"45 seconds","5 minutes","10 minutes","20 minutes","30 minutes","40 minutes","50 minutes","60 minutes"};
-	default = 2400;
+	default = 3600;
 	};
 	class patrolewpmod//20
 	{
@@ -193,7 +193,7 @@ class Params
 	title = "		AI accuracy on non EOS units. (ASR AI detection will override this)";
 	values[]={1,2,3,4,5,6,7,8,9,10};
 	texts[]={"0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
-	default = 5; 
+	default = 1; 
 	};
 	class INS_Dum_Param6//24
 	{
@@ -242,7 +242,7 @@ class Params
 	title = "		Playable Opfor";
 	values[]={0,1};
 	texts[]={"Disabled","Enabled"};
-	default = 1;
+	default = 0;
 	};
 	class INS_logistics//31
 	{
@@ -279,7 +279,7 @@ class Params
 	texts[]={
 	"No",
 	"Yes (Yellow Hand and GL smoke grenades. Heli Crew Helmets and or @hiddenidentitypack mod Gas Masks)"};
-	default = 1;
+	default = 0;
 	};
 	class 3rd_person//36
 	{
@@ -300,7 +300,7 @@ class Params
 	title = "		Dissable Audible AI Radio?";
 	values[]={0,1};
 	texts[]={"No","Yes"};
-	default = 0;
+	default = 1;
 	};
 	class INS_Dum_Param8//39
 	{
@@ -328,7 +328,7 @@ class Params
 	title = "		Maximum possible intel per occupied grid zone ratio";
 	values[]={2,3,4,5,6};
 	texts[]={"1 intel : 2 zones","1 intel : 3 zones","1 intel : 4 zones","1 intel : 5 zones","1 intel : 6 zones"};
-	default = 4;
+	default = 2;
 	};
 	class INS_Dum_Param9//43
 	{

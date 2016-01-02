@@ -183,8 +183,8 @@ if (DebugEnabled > 0) then {
 			{_x setMarkerAlphaLocal 1;} forEach Op4_mkrs;
 			{_x setMarkerAlphaLocal 0;} forEach Blu4_mkrs;
 			deleteMarkerLocal "bluforFarp";
-			[] spawn INS_intro_op4;
-			[] spawn {sleep 10; [player] call Op4_spawn_pos;};
+			//[] spawn INS_intro_op4;
+			[] spawn {sleep 1; [player] call Op4_spawn_pos;};
 			[] spawn {
 				loadout_handler = [player] execVM "scripts\DefLoadoutOp4.sqf";
 				waitUntil { scriptDone loadout_handler };
