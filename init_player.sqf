@@ -101,7 +101,29 @@ if (DebugEnabled > 0) then {
 
 	// Loadout Transfer
 	[INS_Wep_box,true,false,false,false,false] call LT_fnc_LTaction;
-
+	
+	// Safezone
+	/*
+	bsm_fnc_watchProj = {
+		private ["_proj"];
+		_proj = _this;
+		while {alive _proj} do {
+			if ((_proj distance (getMarkerPos "Respawn_West")) < 20) then {
+				_proj setPos [0,0,100];
+				sleep 0.01;
+				_proj setDamage 1;
+			};
+		};
+	};
+	player addEventHandler [
+		"Fired",
+		{
+			if (((_this select 0) distance (getMarkerPos "Respawn_West")) < 300) then {
+				(_this select 6) spawn bsm_fnc_watchProj;
+			};
+		}
+	];
+	*/
 	// Player actions for Engineer's Farp/vehicle service point
 	Jig_m_obj addAction[("<t size='1.5' shadow='2' color='#12F905'>") + (localize "STR_BMR_maintenance_veh") + "</t>","=BTC=_revive\=BTC=_addAction.sqf",[[],INS_maintenance_veh], 8, true, true, "", "count (nearestObjects [position player, [""LandVehicle"",""Air""], 10]) > 0"];
 	Jig_m_obj addAction[("<t size='1.5' shadow='2' color='#12F905'>") + (localize "STR_BMR_repair_wreck") + "</t>","=BTC=_revive\=BTC=_addAction.sqf",[[],BTC_repair_wreck], 8, true, true, "", "count (nearestObjects [position player, [""LandVehicle"",""Air""], 10]) > 0"];
