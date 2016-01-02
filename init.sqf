@@ -216,7 +216,7 @@ if (!isDedicated && hasInterface) then
 		//_va_preload = false;
 		//_va_preload = ["Preload"] call BIS_fnc_arsenal;
 		//waitUntil {_va_preload};
-		if (DebugEnabled isEqualTo 0) then {["BIS_ScreenSetup", false] call BIS_fnc_blackOut;};
+		//if (DebugEnabled isEqualTo 0) then {["BIS_ScreenSetup", false] call BIS_fnc_blackOut;};
 		call compile preprocessFile "INSfncs\client_fncs.sqf";
 		call compile preprocessFile "ATM_airdrop\functions.sqf";
 		getLoadout = compile preprocessFileLineNumbers 'scripts\get_loadout.sqf';

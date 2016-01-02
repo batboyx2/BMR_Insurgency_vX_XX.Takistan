@@ -205,9 +205,9 @@ if (DebugEnabled > 0) then {
 		If (side player == west) then {
 			{_x setMarkerAlphaLocal 1;} forEach Blu4_mkrs;
 			{_x setMarkerAlphaLocal 0;} forEach Op4_mkrs;
-			[] spawn INS_intro;
+			//[] spawn INS_intro;
 			[] spawn {
-				sleep 15;
+				//sleep 15;
 				loadout = [player] call getLoadout;
 				if (INS_MHQ_enabled) then {
 					private ["_op4","_mhqPos","_mhqObj1","_mhqObj2","_mhqObj3"];
